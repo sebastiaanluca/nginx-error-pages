@@ -20,6 +20,7 @@ sudo ln -nfs /etc/nginx/error-pages/snippets/error_pages_content.conf /etc/nginx
 Then include them in each of your virtual hosts config files:
 
 ```
+# Enable custom error pages
 include snippets/error_pages.conf;
 ```
 

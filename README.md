@@ -9,12 +9,12 @@ Customized version.
 On your server:
 
 ```
-mkdir -p /etc/nginx/error-pages
-git clone git@github.com:sebastiaanluca/nginx-error-pages.git /etc/nginx/error-pages
+sudo mkdir -p /etc/nginx/error-pages
+sudo git clone https://github.com/sebastiaanluca/nginx-error-pages.git /etc/nginx/error-pages
 
-mkdir -p /etc/nginx/snippets
-ln -nfs /etc/nginx/error-pages/snippets/error_pages.conf /etc/nginx/snippets/error_pages.conf
-ln -nfs /etc/nginx/error-pages/snippets/error_pages_content.conf /etc/nginx/snippets/error_pages_content.conf
+sudo mkdir -p /etc/nginx/snippets
+sudo ln -nfs /etc/nginx/error-pages/snippets/error_pages.conf /etc/nginx/snippets/error_pages.conf
+sudo ln -nfs /etc/nginx/error-pages/snippets/error_pages_content.conf /etc/nginx/snippets/error_pages_content.conf
 ```
 
 Then include them in each of your virtual hosts config files:
